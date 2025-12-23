@@ -34,8 +34,8 @@ services:
     #image: xuxueli/xxl-job-admin:{version}
     image: xuxueli/xxl-job-admin:local
     build:
-      context: ./xxl-job-admin
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./xxl-job-admin/Dockerfile
     container_name: xxl-job-admin
     environment:
       # 5、数据库密码设置，需要与上文Mysql中保持一致：
